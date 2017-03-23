@@ -1,0 +1,51 @@
+<http://deductions.github.io/biological-collections.owl.ttl#Planting> <http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms.owl.ttl#labelProperty> <http://deductions.github.io/biological-collections.owl.ttl#species> .
+<http://deductions.github.io/biological-collections.owl.ttl#Planting> <http://www.w3.org/2000/01/rdf-schema#label> "Planting"@en .
+<http://deductions.github.io/biological-collections.owl.ttl#Planting> <http://www.w3.org/2000/01/rdf-schema#label> "Plantation"@fr .
+<http://deductions.github.io/biological-collections.owl.ttl#Planting> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://deductions.github.io/biological-collections.owl.ttl#Acquisition> .
+<http://deductions.github.io/biological-collections.owl.ttl#Planting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://deductions.github.io/biological-collections.owl.ttl#BiologicalCollection> <http://www.w3.org/2000/01/rdf-schema#label> "Biological Collection"@en .
+<http://deductions.github.io/biological-collections.owl.ttl#BiologicalCollection> <http://www.w3.org/2000/01/rdf-schema#label> "Collection Biologique"@fr .
+<http://deductions.github.io/biological-collections.owl.ttl#BiologicalCollection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://deductions.github.io/biological-collections.owl.ttl#provenance> <http://www.w3.org/2000/01/rdf-schema#range> <https://schema.org/Organization> .
+<http://deductions.github.io/biological-collections.owl.ttl#provenance> <http://www.w3.org/2000/01/rdf-schema#comment> "The provenance can be a shop, a person, an Arboretum, the location of a picking in the wild, etc. To transform a vendor web site into a semantic URI, one can add #shop to its URL."@en .
+<http://deductions.github.io/biological-collections.owl.ttl#provenance> <http://www.w3.org/2000/01/rdf-schema#domain> <http://deductions.github.io/biological-collections.owl.ttl#Acquisition> .
+<http://deductions.github.io/biological-collections.owl.ttl#provenance> <http://www.w3.org/2000/01/rdf-schema#label> "provenance"@en .
+<http://deductions.github.io/biological-collections.owl.ttl#provenance> <http://www.w3.org/2000/01/rdf-schema#label> "provenance"@fr .
+<http://deductions.github.io/biological-collections.owl.ttl#provenance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://deductions.github.io/biological-collections.owl.ttl#species> <http://www.w3.org/2000/01/rdf-schema#range> <http://dbpedia.org/ontology/Species> .
+<http://deductions.github.io/biological-collections.owl.ttl#species> <http://www.w3.org/2000/01/rdf-schema#domain> <http://deductions.github.io/biological-collections.owl.ttl#Acquisition> .
+<http://deductions.github.io/biological-collections.owl.ttl#species> <http://www.w3.org/2000/01/rdf-schema#label> "species"@en .
+<http://deductions.github.io/biological-collections.owl.ttl#species> <http://www.w3.org/2000/01/rdf-schema#label> "esp\u00E8ce"@fr .
+<http://deductions.github.io/biological-collections.owl.ttl#species> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://deductions.github.io/biological-collections.owl.ttl#acquisitionDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://deductions.github.io/biological-collections.owl.ttl#acquisitionDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://deductions.github.io/biological-collections.owl.ttl#Acquisition> .
+<http://deductions.github.io/biological-collections.owl.ttl#acquisitionDate> <http://www.w3.org/2000/01/rdf-schema#label> "acquisition date"@en .
+<http://deductions.github.io/biological-collections.owl.ttl#acquisitionDate> <http://www.w3.org/2000/01/rdf-schema#label> "date d'acquisition"@fr .
+<http://deductions.github.io/biological-collections.owl.ttl#acquisitionDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://deductions.github.io/biological-collections.owl.ttl#> <http://xmlns.com/foaf/0.1/maker> <http://jmvanel.free.fr/jmv.rdf#me> .
+<http://deductions.github.io/biological-collections.owl.ttl#> <http://www.w3.org/2000/01/rdf-schema#comment> "The collections can be living (Arboreta, Zoos) or not (Herbarium)"@en .
+<http://deductions.github.io/biological-collections.owl.ttl#> <http://www.w3.org/2000/01/rdf-schema#label> "botanical or zoological collections"@en .
+<http://deductions.github.io/biological-collections.owl.ttl#> <http://www.w3.org/2000/01/rdf-schema#comment> "Les collections peuvent \u00EAtre vivantes (Arboreta, Zoos) ou non (Herbiers)"@fr .
+<http://deductions.github.io/biological-collections.owl.ttl#> <http://www.w3.org/2000/01/rdf-schema#label> "Collections botaniques ou zoologiques"@fr .
+<http://deductions.github.io/biological-collections.owl.ttl#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://deductions.github.io/biological-collections.owl.ttl#Acquisition> <http://www.w3.org/2000/01/rdf-schema#label> "Acquisition"@en .
+<http://deductions.github.io/biological-collections.owl.ttl#Acquisition> <http://www.w3.org/2000/01/rdf-schema#label> "Acquisition"@fr .
+<http://deductions.github.io/biological-collections.owl.ttl#Acquisition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://deductions.github.io/biological-collections.owl.ttl#location> <http://www.w3.org/2000/01/rdf-schema#range> <http://deductions.github.io/biological-collections.owl.ttl#Place> .
+<http://deductions.github.io/biological-collections.owl.ttl#location> <http://www.w3.org/2000/01/rdf-schema#domain> <http://deductions.github.io/biological-collections.owl.ttl#BiologicalCollection> .
+<http://deductions.github.io/biological-collections.owl.ttl#location> <http://www.w3.org/2000/01/rdf-schema#label> "location"@en .
+<http://deductions.github.io/biological-collections.owl.ttl#location> <http://www.w3.org/2000/01/rdf-schema#label> "emplacement"@fr .
+<http://deductions.github.io/biological-collections.owl.ttl#location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://deductions.github.io/biological-collections.owl.ttl#Place> <http://www.w3.org/2000/01/rdf-schema#label> "Place"@en .
+<http://deductions.github.io/biological-collections.owl.ttl#Place> <http://www.w3.org/2000/01/rdf-schema#label> "Emplacement"@fr .
+<http://deductions.github.io/biological-collections.owl.ttl#Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://deductions.github.io/biological-collections.owl.ttl#inCollection> <http://www.w3.org/2000/01/rdf-schema#range> <http://deductions.github.io/biological-collections.owl.ttl#BiologicalCollection> .
+<http://deductions.github.io/biological-collections.owl.ttl#inCollection> <http://www.w3.org/2000/01/rdf-schema#domain> <http://deductions.github.io/biological-collections.owl.ttl#Acquisition> .
+<http://deductions.github.io/biological-collections.owl.ttl#inCollection> <http://www.w3.org/2000/01/rdf-schema#label> "in Collection"@en .
+<http://deductions.github.io/biological-collections.owl.ttl#inCollection> <http://www.w3.org/2000/01/rdf-schema#label> "dans la Collection"@fr .
+<http://deductions.github.io/biological-collections.owl.ttl#inCollection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://deductions.github.io/biological-collections.owl.ttl#manager> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Person> .
+<http://deductions.github.io/biological-collections.owl.ttl#manager> <http://www.w3.org/2000/01/rdf-schema#domain> <http://deductions.github.io/biological-collections.owl.ttl#BiologicalCollection> .
+<http://deductions.github.io/biological-collections.owl.ttl#manager> <http://www.w3.org/2000/01/rdf-schema#label> "manager"@en .
+<http://deductions.github.io/biological-collections.owl.ttl#manager> <http://www.w3.org/2000/01/rdf-schema#label> "g\u00E9r\u00E9 par"@fr .
+<http://deductions.github.io/biological-collections.owl.ttl#manager> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .

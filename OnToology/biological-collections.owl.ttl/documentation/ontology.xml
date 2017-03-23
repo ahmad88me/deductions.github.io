@@ -1,0 +1,85 @@
+<rdf:RDF
+    xmlns:form="http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms.owl.ttl#"
+    xmlns:bioc="http://deductions.github.io/biological-collections.owl.ttl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dbr="http://dbpedia.org/resource/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:schema="http://schema.org/"
+    xmlns:dbo="http://dbpedia.org/ontology/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://deductions.github.io/biological-collections.owl.ttl#Place">
+    <rdfs:label xml:lang="en">Place</rdfs:label>
+    <rdfs:label xml:lang="fr">Emplacement</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://deductions.github.io/biological-collections.owl.ttl#provenance">
+    <rdfs:range rdf:resource="https://schema.org/Organization"/>
+    <rdfs:comment xml:lang="en">The provenance can be a shop, a person, an Arboretum, the location of a picking in the wild, etc. To transform a vendor web site into a semantic URI, one can add #shop to its URL.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://deductions.github.io/biological-collections.owl.ttl#Acquisition"/>
+    <rdfs:label xml:lang="en">provenance</rdfs:label>
+    <rdfs:label xml:lang="fr">provenance</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://deductions.github.io/biological-collections.owl.ttl#manager">
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="http://deductions.github.io/biological-collections.owl.ttl#BiologicalCollection"/>
+    <rdfs:label xml:lang="en">manager</rdfs:label>
+    <rdfs:label xml:lang="fr">géré par</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://deductions.github.io/biological-collections.owl.ttl#acquisitionDate">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdfs:domain rdf:resource="http://deductions.github.io/biological-collections.owl.ttl#Acquisition"/>
+    <rdfs:label xml:lang="en">acquisition date</rdfs:label>
+    <rdfs:label xml:lang="fr">date d'acquisition</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://deductions.github.io/biological-collections.owl.ttl#Planting">
+    <form:labelProperty rdf:resource="http://deductions.github.io/biological-collections.owl.ttl#species"/>
+    <rdfs:label xml:lang="en">Planting</rdfs:label>
+    <rdfs:label xml:lang="fr">Plantation</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://deductions.github.io/biological-collections.owl.ttl#Acquisition"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://deductions.github.io/biological-collections.owl.ttl#location">
+    <rdfs:range rdf:resource="http://deductions.github.io/biological-collections.owl.ttl#Place"/>
+    <rdfs:domain rdf:resource="http://deductions.github.io/biological-collections.owl.ttl#BiologicalCollection"/>
+    <rdfs:label xml:lang="en">location</rdfs:label>
+    <rdfs:label xml:lang="fr">emplacement</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://deductions.github.io/biological-collections.owl.ttl#">
+    <foaf:maker rdf:resource="http://jmvanel.free.fr/jmv.rdf#me"/>
+    <rdfs:comment xml:lang="en">The collections can be living (Arboreta, Zoos) or not (Herbarium)</rdfs:comment>
+    <rdfs:label xml:lang="en">botanical or zoological collections</rdfs:label>
+    <rdfs:comment xml:lang="fr">Les collections peuvent être vivantes (Arboreta, Zoos) ou non (Herbiers)</rdfs:comment>
+    <rdfs:label xml:lang="fr">Collections botaniques ou zoologiques</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://deductions.github.io/biological-collections.owl.ttl#inCollection">
+    <rdfs:range rdf:resource="http://deductions.github.io/biological-collections.owl.ttl#BiologicalCollection"/>
+    <rdfs:domain rdf:resource="http://deductions.github.io/biological-collections.owl.ttl#Acquisition"/>
+    <rdfs:label xml:lang="en">in Collection</rdfs:label>
+    <rdfs:label xml:lang="fr">dans la Collection</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://deductions.github.io/biological-collections.owl.ttl#species">
+    <rdfs:range rdf:resource="http://dbpedia.org/ontology/Species"/>
+    <rdfs:domain rdf:resource="http://deductions.github.io/biological-collections.owl.ttl#Acquisition"/>
+    <rdfs:label xml:lang="en">species</rdfs:label>
+    <rdfs:label xml:lang="fr">espèce</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://deductions.github.io/biological-collections.owl.ttl#Acquisition">
+    <rdfs:label xml:lang="en">Acquisition</rdfs:label>
+    <rdfs:label xml:lang="fr">Acquisition</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://deductions.github.io/biological-collections.owl.ttl#BiologicalCollection">
+    <rdfs:label xml:lang="en">Biological Collection</rdfs:label>
+    <rdfs:label xml:lang="fr">Collection Biologique</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+</rdf:RDF>

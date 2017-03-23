@@ -1,0 +1,30 @@
+<http://deductions.github.io/seeds.owl.ttl#variety> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://deductions.github.io/seeds.owl.ttl#variety> <http://www.w3.org/2000/01/rdf-schema#domain> <http://deductions.github.io/seeds.owl.ttl#SeedsBatch> .
+<http://deductions.github.io/seeds.owl.ttl#variety> <http://www.w3.org/2000/01/rdf-schema#label> "variety"@en .
+<http://deductions.github.io/seeds.owl.ttl#variety> <http://www.w3.org/2000/01/rdf-schema#label> "vari\u00E9t\u00E9"@fr .
+<http://deductions.github.io/seeds.owl.ttl#variety> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://deductions.github.io/seeds.owl.ttl#year> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://deductions.github.io/seeds.owl.ttl#year> <http://www.w3.org/2000/01/rdf-schema#domain> <http://deductions.github.io/seeds.owl.ttl#SeedsBatch> .
+<http://deductions.github.io/seeds.owl.ttl#year> <http://www.w3.org/2000/01/rdf-schema#label> "ann\u00E9e"@fr .
+<http://deductions.github.io/seeds.owl.ttl#year> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://deductions.github.io/seeds.owl.ttl#> <http://www.w3.org/2000/01/rdf-schema#label> "Vocabulaire pour \u00E9change de graines"@fr .
+<http://deductions.github.io/seeds.owl.ttl#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://deductions.github.io/seeds.owl.ttl#isOrganic> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://deductions.github.io/seeds.owl.ttl#isOrganic> <http://www.w3.org/2000/01/rdf-schema#domain> <http://deductions.github.io/seeds.owl.ttl#SeedsBatch> .
+<http://deductions.github.io/seeds.owl.ttl#isOrganic> <http://www.w3.org/2000/01/rdf-schema#label> "Organic"@en .
+<http://deductions.github.io/seeds.owl.ttl#isOrganic> <http://www.w3.org/2000/01/rdf-schema#label> "Bio"@fr .
+<http://deductions.github.io/seeds.owl.ttl#isOrganic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://deductions.github.io/seeds.owl.ttl#SeedsBatch> <http://www.w3.org/2000/01/rdf-schema#comment> "\nChacun-e indique ce qu'il-elle est pr\u00EAt-e \u00E0 partager avec les autres membres du r\u00E9seau,\n- la quantit\u00E9 en nb ou grammage,\n- les indications sur les graines\n\t- ann\u00E9e,\n\t- origine (paysanne autoproduite ou nom du fournisseur,\n\t- bio ou non, \n        - esp\u00E8ce, vari\u00E9t\u00E9 )\n- l'emplacement g\u00E9ographique de ces graines,\n- la modalit\u00E9 de partage (vente, don, ...) .\n" .
+<http://deductions.github.io/seeds.owl.ttl#SeedsBatch> <http://www.w3.org/2000/01/rdf-schema#label> "lot de graines"@fr .
+<http://deductions.github.io/seeds.owl.ttl#SeedsBatch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://deductions.github.io/biological-collections.owl.ttl#Acquisition> .
+<http://deductions.github.io/seeds.owl.ttl#SeedsBatch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://deductions.github.io/seeds.owl.ttl#quantity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://deductions.github.io/seeds.owl.ttl#quantity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://deductions.github.io/seeds.owl.ttl#SeedsBatch> .
+<http://deductions.github.io/seeds.owl.ttl#quantity> <http://www.w3.org/2000/01/rdf-schema#comment> "quantit\u00E9 en grammage (grammes); exemple \"100\" "@fr .
+<http://deductions.github.io/seeds.owl.ttl#quantity> <http://www.w3.org/2000/01/rdf-schema#label> "quantity"@en .
+<http://deductions.github.io/seeds.owl.ttl#quantity> <http://www.w3.org/2000/01/rdf-schema#label> "quantit\u00E9"@fr .
+<http://deductions.github.io/seeds.owl.ttl#quantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://deductions.github.io/seeds.owl.ttl#sharingMode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://deductions.github.io/seeds.owl.ttl#sharingMode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://deductions.github.io/seeds.owl.ttl#SeedsBatch> .
+<http://deductions.github.io/seeds.owl.ttl#sharingMode> <http://www.w3.org/2000/01/rdf-schema#label> "modalit\u00E9 de partage (vente, don, ...)"@fr .
+<http://deductions.github.io/seeds.owl.ttl#sharingMode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .

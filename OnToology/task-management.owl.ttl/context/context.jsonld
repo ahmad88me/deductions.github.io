@@ -1,0 +1,83 @@
+{
+  "@context" : {
+    "technology" : {
+      "@id" : "http://deductions.github.io/task-management.owl.ttl#technology",
+      "@type" : "@id"
+    },
+    "priority" : {
+      "@id" : "http://deductions.github.io/task-management.owl.ttl#priority",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Thread" : {
+      "@id" : "http://rdfs.org/sioc/ns#Thread"
+    },
+    "discussion" : {
+      "@id" : "http://deductions.github.io/task-management.owl.ttl#discussion"
+    },
+    "tasks" : {
+      "@id" : "http://deductions.github.io/task-management.owl.ttl#tasks",
+      "@type" : "@id"
+    },
+    "group" : {
+      "@id" : "http://deductions.github.io/task-management.owl.ttl#group"
+    },
+    "workDurationEstimated" : {
+      "@id" : "http://deductions.github.io/task-management.owl.ttl#workDurationEstimated",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "maker" : {
+      "@id" : "http://xmlns.com/foaf/0.1/maker"
+    },
+    "hardness" : {
+      "@id" : "http://deductions.github.io/task-management.owl.ttl#hardness",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "author" : {
+      "@id" : "http://deductions.github.io/task-management.owl.ttl#author",
+      "@type" : "@id"
+    },
+    "project" : {
+      "@id" : "http://deductions.github.io/task-management.owl.ttl#project",
+      "@type" : "@id"
+    },
+    "Person" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Person"
+    },
+    "workDuration" : {
+      "@id" : "http://deductions.github.io/task-management.owl.ttl#workDuration",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Project" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Project"
+    },
+    "managedBy" : {
+      "@id" : "http://deductions.github.io/task-management.owl.ttl#managedBy"
+    },
+    "assignee" : {
+      "@id" : "http://deductions.github.io/task-management.owl.ttl#assignee",
+      "@type" : "@id"
+    },
+    "state" : {
+      "@id" : "http://deductions.github.io/task-management.owl.ttl#state",
+      "@type" : "@id"
+    },
+    "dailyPrice" : {
+      "@id" : "http://deductions.github.io/task-management.owl.ttl#dailyPrice",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "price" : {
+      "@id" : "http://deductions.github.io/task-management.owl.ttl#price",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "estimatedPrice" : {
+      "@id" : "http://deductions.github.io/task-management.owl.ttl#estimatedPrice",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Task" : {
+      "@id" : "http://deductions.github.io/task-management.owl.ttl#Task"
+    }
+  }
+}

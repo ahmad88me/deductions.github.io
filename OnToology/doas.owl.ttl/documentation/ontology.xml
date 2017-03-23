@@ -1,0 +1,96 @@
+<rdf:RDF
+    xmlns:list="http://www.w3.org/2000/10/swap/list#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:doap="http://usefulinc.com/ns/doap#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:log="http://www.w3.org/2000/10/swap/log#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:dbpedia="http://dbpedia.org/resource/"
+    xmlns:app="http://jmvanel.free.fr/ontology/software_applications.owl#"
+    xmlns:doas="file:///home/ubuntu/temp/ahmad88me@gmail.com/#"
+    xmlns:grddl="http://www.w3.org/2003/g/data-view#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="file:///home/ubuntu/temp/ahmad88me@gmail.com/#modelingTechnology">
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label xml:lang="en">modeling technology</rdfs:label>
+    <rdfs:domain rdf:resource="file:///home/ubuntu/temp/ahmad88me@gmail.com/#Software"/>
+    <rdfs:comment xml:lang="en">modeling technology, as dbPdedia URI's; e.g. OWL, UML, SQL, Swagger, ...</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/ubuntu/temp/ahmad88me@gmail.com/#inputFileTypes">
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label xml:lang="en">input file types</rdfs:label>
+    <rdfs:domain rdf:resource="file:///home/ubuntu/temp/ahmad88me@gmail.com/#Software"/>
+    <rdfs:comment xml:lang="en">input file types, as dbPdedia URI's</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/ubuntu/temp/ahmad88me@gmail.com/#features">
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label xml:lang="en">features</rdfs:label>
+    <rdfs:domain rdf:resource="file:///home/ubuntu/temp/ahmad88me@gmail.com/#Software"/>
+    <rdfs:comment xml:lang="en">features, as dbPdedia URI's</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/ubuntu/temp/ahmad88me@gmail.com/#uiTechnology">
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label xml:lang="en">UI</rdfs:label>
+    <rdfs:domain rdf:resource="file:///home/ubuntu/temp/ahmad88me@gmail.com/#Software"/>
+    <rdfs:comment xml:lang="en">User interface, a broad platform or library name, like web browser, Java Swing, TCL/TK, as dbPdedia URI's</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/ubuntu/temp/ahmad88me@gmail.com/#isPluginOf">
+    <rdfs:range rdf:resource="file:///home/ubuntu/temp/ahmad88me@gmail.com/#Software"/>
+    <rdfs:label xml:lang="en">plugin of</rdfs:label>
+    <rdfs:domain rdf:resource="file:///home/ubuntu/temp/ahmad88me@gmail.com/#Software"/>
+    <rdfs:comment xml:lang="en">embedding software if this sowftware is a plugin or module, as dbPdedia URI's; e.g. Firefox, Chrome, Apache, Protégé, ...</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/ubuntu/temp/ahmad88me@gmail.com/#">
+    <rdfs:comment xml:lang="en">Description Of A Software, a formal Description of a software focusing on architecture, feature, and input/output, enabling to search a software component according to needs,
+and leveraging on dbPdedia.
+complementary to DOAP.</rdfs:comment>
+    <rdfs:label>Description Of A Software</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/ubuntu/temp/ahmad88me@gmail.com/#language">
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label xml:lang="en">language</rdfs:label>
+    <rdfs:domain rdf:resource="file:///home/ubuntu/temp/ahmad88me@gmail.com/#Software"/>
+    <rdfs:comment xml:lang="en">programming language, as dbPdedia URI's</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/ubuntu/temp/ahmad88me@gmail.com/#Software">
+    <rdfs:label xml:lang="en">A software</rdfs:label>
+    <rdfs:subclassOf rdf:resource="http://usefulinc.com/ns/doap#Project"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/ubuntu/temp/ahmad88me@gmail.com/#dependencyManager">
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label xml:lang="en">dependency Manager</rdfs:label>
+    <rdfs:domain rdf:resource="file:///home/ubuntu/temp/ahmad88me@gmail.com/#Software"/>
+    <rdfs:comment xml:lang="en">dependency Manager like npm, Maven, SBT, or explicitely dbpedia:Nothing, as dbPdedia URI's</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/ubuntu/temp/ahmad88me@gmail.com/#outputFileTypes">
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label xml:lang="en">output file types</rdfs:label>
+    <rdfs:domain rdf:resource="file:///home/ubuntu/temp/ahmad88me@gmail.com/#Software"/>
+    <rdfs:comment xml:lang="en">output file types, as dbPdedia URI's</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/ubuntu/temp/ahmad88me@gmail.com/#hasProject">
+    <rdfs:range rdf:resource="http://usefulinc.com/ns/doap#Project"/>
+    <rdfs:label xml:lang="en">project</rdfs:label>
+    <rdfs:domain rdf:resource="file:///home/ubuntu/temp/ahmad88me@gmail.com/#Software"/>
+    <rdfs:comment xml:lang="en">the associated project(s)</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///home/ubuntu/temp/ahmad88me@gmail.com/#softwareType">
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label xml:lang="en">software type</rdfs:label>
+    <rdfs:domain rdf:resource="file:///home/ubuntu/temp/ahmad88me@gmail.com/#Software"/>
+    <rdfs:comment xml:lang="en">software type : client, server, library, compiler, etc (as dbPdedia URI)</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+</rdf:RDF>

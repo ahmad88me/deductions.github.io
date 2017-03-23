@@ -1,0 +1,90 @@
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix form:    <http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms.owl.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doas:    <file:///home/ubuntu/temp/ahmad88me@gmail.com/doas.owl.ttl#> .
+@prefix forms:   <http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms#> .
+
+forms:doasForm-outputFileTypes
+      form:fieldAppliesToForm
+              forms:doasForm ;
+      form:fieldAppliesToProperty
+              doas:outputFileTypes ;
+      form:widgetClass form:DBPediaLookup .
+
+forms:doasForm-language
+      form:fieldAppliesToForm
+              forms:doasForm ;
+      form:fieldAppliesToProperty
+              doas:language ;
+      form:widgetClass form:DBPediaLookup .
+
+forms:doasForm-hasProject
+      form:fieldAppliesToForm
+              forms:doasForm ;
+      form:fieldAppliesToProperty
+              doas:hasProject ;
+      form:widgetClass form:DBPediaLookup .
+
+forms:doasForm-softwareType
+      form:fieldAppliesToForm
+              forms:doasForm ;
+      form:fieldAppliesToProperty
+              doas:softwareType ;
+      form:widgetClass form:DBPediaLookup .
+
+forms:doasForm-modelingTechnology
+      form:fieldAppliesToForm
+              forms:doasForm ;
+      form:fieldAppliesToProperty
+              doas:modelingTechnology ;
+      form:widgetClass form:DBPediaLookup .
+
+forms:doasForm-dependencyManager
+      form:fieldAppliesToForm
+              forms:doasForm ;
+      form:fieldAppliesToProperty
+              doas:dependencyManager ;
+      form:widgetClass form:DBPediaLookup .
+
+forms:doasForm
+      a       form:specification ;
+      rdfs:label "Description d'un logiciel"@fr , "Description Of A Software"@en ;
+      form:classDomain doas:Software ;
+      form:showProperties (doas:softwareType doas:features doas:language doas:inputFileTypes doas:outputFileTypes doas:uiTechnology doas:dependencyManager doas:isPluginOf doas:modelingTechnology doas:hasProject) .
+
+forms:doasForm-
+      form:fieldAppliesToForm
+              forms:doasForm ;
+      form:fieldAppliesToProperty
+              doas: ;
+      form:widgetClass form:DBPediaLookup .
+
+forms:doasForm-uiTechnology
+      form:fieldAppliesToForm
+              forms:doasForm ;
+      form:fieldAppliesToProperty
+              doas:uiTechnology ;
+      form:widgetClass form:DBPediaLookup .
+
+forms:doasForm-features
+      form:fieldAppliesToForm
+              forms:doasForm ;
+      form:fieldAppliesToProperty
+              doas:features ;
+      form:widgetClass form:DBPediaLookup .
+
+forms:doasForm-inputFileTypes
+      form:fieldAppliesToForm
+              forms:doasForm ;
+      form:fieldAppliesToProperty
+              doas:inputFileTypes ;
+      form:widgetClass form:DBPediaLookup .
+
+forms:doasForm-isPluginOf
+      form:fieldAppliesToForm
+              forms:doasForm ;
+      form:fieldAppliesToProperty
+              doas:isPluginOf ;
+      form:widgetClass form:DBPediaLookup .

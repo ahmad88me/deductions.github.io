@@ -1,0 +1,36 @@
+{
+  "@context" : {
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "sharingMode" : {
+      "@id" : "http://deductions.github.io/seeds.owl.ttl#sharingMode",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "isOrganic" : {
+      "@id" : "http://deductions.github.io/seeds.owl.ttl#isOrganic",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "variety" : {
+      "@id" : "http://deductions.github.io/seeds.owl.ttl#variety",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "quantity" : {
+      "@id" : "http://deductions.github.io/seeds.owl.ttl#quantity",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "year" : {
+      "@id" : "http://deductions.github.io/seeds.owl.ttl#year",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Acquisition" : {
+      "@id" : "http://deductions.github.io/biological-collections.owl.ttl#Acquisition"
+    },
+    "SeedsBatch" : {
+      "@id" : "http://deductions.github.io/seeds.owl.ttl#SeedsBatch"
+    }
+  }
+}

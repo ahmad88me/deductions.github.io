@@ -1,0 +1,59 @@
+{
+  "@context" : {
+    "modelingTechnology" : {
+      "@id" : "file:///home/ubuntu/temp/ahmad88me@gmail.com/#modelingTechnology",
+      "@type" : "@id"
+    },
+    "Software" : {
+      "@id" : "file:///home/ubuntu/temp/ahmad88me@gmail.com/#Software"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "isPluginOf" : {
+      "@id" : "file:///home/ubuntu/temp/ahmad88me@gmail.com/#isPluginOf",
+      "@type" : "@id"
+    },
+    "hasProject" : {
+      "@id" : "file:///home/ubuntu/temp/ahmad88me@gmail.com/#hasProject",
+      "@type" : "@id"
+    },
+    "outputFileTypes" : {
+      "@id" : "file:///home/ubuntu/temp/ahmad88me@gmail.com/#outputFileTypes",
+      "@type" : "@id"
+    },
+    "dependencyManager" : {
+      "@id" : "file:///home/ubuntu/temp/ahmad88me@gmail.com/#dependencyManager",
+      "@type" : "@id"
+    },
+    "Project" : {
+      "@id" : "http://usefulinc.com/ns/doap#Project"
+    },
+    "inputFileTypes" : {
+      "@id" : "file:///home/ubuntu/temp/ahmad88me@gmail.com/#inputFileTypes",
+      "@type" : "@id"
+    },
+    "uiTechnology" : {
+      "@id" : "file:///home/ubuntu/temp/ahmad88me@gmail.com/#uiTechnology",
+      "@type" : "@id"
+    },
+    "softwareType" : {
+      "@id" : "file:///home/ubuntu/temp/ahmad88me@gmail.com/#softwareType",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "language" : {
+      "@id" : "file:///home/ubuntu/temp/ahmad88me@gmail.com/#language",
+      "@type" : "@id"
+    },
+    "features" : {
+      "@id" : "file:///home/ubuntu/temp/ahmad88me@gmail.com/#features",
+      "@type" : "@id"
+    }
+  }
+}

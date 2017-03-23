@@ -1,0 +1,98 @@
+<rdf:RDF
+    xmlns:tm="http://deductions.github.io/task-management.owl.ttl#"
+    xmlns:form="http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms.owl.ttl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:forms="http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms#"
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:dbr="http://dbpedia.org/resource/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:dbo="http://dbpedia.org/ontology/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:nodeID="A0">
+    <rdf:rest rdf:nodeID="A1"/>
+    <rdf:first rdf:resource="http://deductions.github.io/task-management.owl.ttl#workDuration"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://deductions.github.io/task-management.owl.ttl#form-Task-technology">
+    <form:widgetClass rdf:resource="http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms.owl.ttl#DBPediaLookup"/>
+    <form:fieldAppliesToProperty rdf:resource="http://deductions.github.io/task-management.owl.ttl#technology"/>
+    <form:fieldAppliesToForm rdf:resource="http://deductions.github.io/task-management.owl.ttl#form-Task"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://deductions.github.io/task-management.owl.ttl#form-Task">
+    <form:showProperties rdf:nodeID="A2"/>
+    <form:classDomain rdf:resource="http://deductions.github.io/task-management.owl.ttl#Task"/>
+    <rdfs:label xml:lang="fr">Tâche</rdfs:label>
+    <rdfs:label xml:lang="en">Tâche</rdfs:label>
+    <rdf:type rdf:resource="http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms.owl.ttl#specification"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A3">
+    <rdf:rest rdf:nodeID="A4"/>
+    <rdf:first rdf:resource="http://deductions.github.io/task-management.owl.ttl#tasks"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A2">
+    <rdf:rest rdf:nodeID="A5"/>
+    <rdf:first rdf:resource="http://deductions.github.io/task-management.owl.ttl#project"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A4">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/dc/terms/subject"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A6">
+    <rdf:rest rdf:nodeID="A7"/>
+    <rdf:first rdf:resource="http://deductions.github.io/task-management.owl.ttl#discussion"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A7">
+    <rdf:rest rdf:nodeID="A8"/>
+    <rdf:first rdf:resource="http://deductions.github.io/task-management.owl.ttl#group"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A8">
+    <rdf:rest rdf:nodeID="A9"/>
+    <rdf:first rdf:resource="http://deductions.github.io/task-management.owl.ttl#priority"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A10">
+    <rdf:rest rdf:nodeID="A11"/>
+    <rdf:first rdf:resource="http://deductions.github.io/task-management.owl.ttl#managedBy"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A9">
+    <rdf:rest rdf:nodeID="A12"/>
+    <rdf:first rdf:resource="http://deductions.github.io/task-management.owl.ttl#technology"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A11">
+    <rdf:rest rdf:nodeID="A13"/>
+    <rdf:first rdf:resource="http://deductions.github.io/task-management.owl.ttl#dailyPrice"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A13">
+    <rdf:rest rdf:nodeID="A14"/>
+    <rdf:first rdf:resource="http://deductions.github.io/task-management.owl.ttl#estimatedPrice"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A14">
+    <rdf:rest rdf:nodeID="A6"/>
+    <rdf:first rdf:resource="http://deductions.github.io/task-management.owl.ttl#price"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A1">
+    <rdf:rest rdf:nodeID="A10"/>
+    <rdf:first rdf:resource="http://deductions.github.io/task-management.owl.ttl#assignee"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A15">
+    <rdf:rest rdf:nodeID="A0"/>
+    <rdf:first rdf:resource="http://deductions.github.io/task-management.owl.ttl#workDurationEstimated"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A5">
+    <rdf:rest rdf:nodeID="A15"/>
+    <rdf:first rdf:resource="http://deductions.github.io/task-management.owl.ttl#state"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://deductions.github.io/task-management.owl.ttl#form-Task-subject">
+    <form:widgetClass rdf:resource="http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms.owl.ttl#DBPediaLookup"/>
+    <form:fieldAppliesToProperty rdf:resource="http://purl.org/dc/terms/subject"/>
+    <form:fieldAppliesToForm rdf:resource="http://deductions.github.io/task-management.owl.ttl#form-Task"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A12">
+    <rdf:rest rdf:nodeID="A16"/>
+    <rdf:first rdf:resource="http://deductions.github.io/task-management.owl.ttl#hardness"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A16">
+    <rdf:rest rdf:nodeID="A3"/>
+    <rdf:first rdf:resource="http://deductions.github.io/task-management.owl.ttl#author"/>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,17 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "file:///#Software" ; /*classes style*/
+	"file:///#Software" -> "doap:Project" [ label = "rdfs:subclassOf" ];
+	"file:///#Software" -> "owl:Thing" [ label = "file:///#uiTechnology" ];
+	"file:///#Software" -> "owl:Thing" [ label = "file:///#softwareType" ];
+	"file:///#Software" -> "owl:Thing" [ label = "file:///#modelingTechnology" ];
+	"file:///#Software" -> "owl:Thing" [ label = "file:///#language" ];
+	"file:///#Software" -> "owl:Thing" [ label = "file:///#dependencyManager" ];
+	"file:///#Software" -> "owl:Thing" [ label = "file:///#inputFileTypes" ];
+	"file:///#Software" -> "owl:Thing" [ label = "file:///#features" ];
+	"file:///#Software" -> "file:///#Software" [ label = "file:///#isPluginOf" ];
+	"file:///#Software" -> "doap:Project" [ label = "file:///#hasProject" ];
+	"file:///#Software" -> "owl:Thing" [ label = "file:///#outputFileTypes" ];
+
+}

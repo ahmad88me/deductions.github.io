@@ -1,0 +1,22 @@
+@prefix :        <http://deductions.github.io/biological-collections.owl.ttl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbr:     <http://dbpedia.org/resource/> .
+@prefix dbo:     <http://dbpedia.org/ontology/> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbpedia:  <http://dbpedia.org/resource/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix bioc:    <http://deductions.github.io/biological-collections.owl.ttl#> .
+
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/Iris_sibirica>
+      a       bioc:Planting ;
+      bioc:acquisitionDate
+              "2016-07"^^xsd:date ;
+      bioc:inCollection bioc:jean-marc_vanel_park ;
+      bioc:provenance <http://www.lesjardinsaquatiques.fr/#shop> ;
+      bioc:species dbpedia:Iris_sibirica .
+
+bioc:jean-marc_vanel_park
+      a       bioc:BiologicalCollection ;
+      bioc:manager <http://jmvanel.free.fr/jmv.rdf#me> .

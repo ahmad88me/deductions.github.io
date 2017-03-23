@@ -1,0 +1,187 @@
+<h2  id="crossreference" class="list">Cross reference for Vocabulaire pour échange de graines classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Vocabulaire pour échange de graines.
+<div id="classes">
+   <h3 id="classes" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#SeedsBatch"
+            title="http://deductions.github.io/seeds.owl.ttl#SeedsBatch">lot de graines</a>
+      </li>
+   </ul>
+   <div class="entity" id="SeedsBatch">
+      <h3>lot de graines<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://deductions.github.io/seeds.owl.ttl#SeedsBatch</p>
+      <div class="comment">
+         <span class="markdown">
+Chacun-e indique ce qu'il-elle est prêt-e à partager avec les autres membres du réseau,
+- la quantité en nb ou grammage,
+- les indications sur les graines
+	- année,
+	- origine (paysanne autoproduite ou nom du fournisseur,
+	- bio ou non, 
+        - espèce, variété )
+- l'emplacement géographique de ces graines,
+- la modalité de partage (vente, don, ...) .
+</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted"
+                  title="http://deductions.github.io/biological-collections.owl.ttl#Acquisition">acquisition</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#isOrganic"
+               title="http://deductions.github.io/seeds.owl.ttl#isOrganic">Organic</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#year" title="http://deductions.github.io/seeds.owl.ttl#year">année</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#sharingMode"
+               title="http://deductions.github.io/seeds.owl.ttl#sharingMode">modalité de partage (vente, don, ...)</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#quantity"
+               title="http://deductions.github.io/seeds.owl.ttl#quantity">quantity</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#variety" title="http://deductions.github.io/seeds.owl.ttl#variety">variety</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="dataproperties">
+   <h3 id="dataproperties" class="list">Data Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#year" title="http://deductions.github.io/seeds.owl.ttl#year">année</a>
+      </li>
+      <li>
+         <a href="#sharingMode"
+            title="http://deductions.github.io/seeds.owl.ttl#sharingMode">modalité de partage (vente, don, ...)</a>
+      </li>
+      <li>
+         <a href="#isOrganic"
+            title="http://deductions.github.io/seeds.owl.ttl#isOrganic">Organic</a>
+      </li>
+      <li>
+         <a href="#quantity"
+            title="http://deductions.github.io/seeds.owl.ttl#quantity">quantity</a>
+      </li>
+      <li>
+         <a href="#variety" title="http://deductions.github.io/seeds.owl.ttl#variety">variety</a>
+      </li>
+   </ul>
+   <div class="entity" id="year">
+      <h3>année<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://deductions.github.io/seeds.owl.ttl#year</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#SeedsBatch"
+                  title="http://deductions.github.io/seeds.owl.ttl#SeedsBatch">lot de graines</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#integer">integer</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="sharingMode">
+      <h3>modalité de partage (vente, don, ...)<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://deductions.github.io/seeds.owl.ttl#sharingMode</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#SeedsBatch"
+                  title="http://deductions.github.io/seeds.owl.ttl#SeedsBatch">lot de graines</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isOrganic">
+      <h3>Organic<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://deductions.github.io/seeds.owl.ttl#isOrganic</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#SeedsBatch"
+                  title="http://deductions.github.io/seeds.owl.ttl#SeedsBatch">lot de graines</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="quantity">
+      <h3>quantity<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://deductions.github.io/seeds.owl.ttl#quantity</p>
+      <div class="comment">
+         <span class="markdown">quantité en grammage (grammes); exemple "100" </span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#SeedsBatch"
+                  title="http://deductions.github.io/seeds.owl.ttl#SeedsBatch">lot de graines</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#integer">integer</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="variety">
+      <h3>variety<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://deductions.github.io/seeds.owl.ttl#variety</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#SeedsBatch"
+                  title="http://deductions.github.io/seeds.owl.ttl#SeedsBatch">lot de graines</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div>

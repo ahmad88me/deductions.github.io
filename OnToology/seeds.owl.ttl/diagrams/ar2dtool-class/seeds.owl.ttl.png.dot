@@ -1,0 +1,11 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "seeds:SeedsBatch" ; /*classes style*/
+	"seeds:SeedsBatch" -> "xsd:string" [ label = "seeds:sharingMode" ];
+	"seeds:SeedsBatch" -> "xsd:integer" [ label = "seeds:quantity" ];
+	"seeds:SeedsBatch" -> "xsd:boolean" [ label = "seeds:isOrganic" ];
+	"seeds:SeedsBatch" -> "xsd:string" [ label = "seeds:variety" ];
+	"seeds:SeedsBatch" -> "xsd:integer" [ label = "seeds:year" ];
+
+}

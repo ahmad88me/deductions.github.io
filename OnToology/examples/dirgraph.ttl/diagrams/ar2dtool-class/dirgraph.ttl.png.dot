@@ -1,0 +1,17 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+	"d:l2" -> "d:my_new_idea" [ label = "gr:tail" ];
+	"d:l2" -> "d:neruda_productions" [ label = "gr:head" ];
+	"d:personne-devin" -> "mailto:devin@callysto.com" [ label = "foaf:mbox" ];
+	"d:neruda_productions" -> "https://www.nerudaarts.ca/" [ label = "foaf:homepage" ];
+	"d:l5" -> "d:neruda_productions" [ label = "gr:tail" ];
+	"d:l5" -> "d:my_other_cool_idea" [ label = "gr:head" ];
+	"d:l3" -> "d:newcomer_community" [ label = "gr:tail" ];
+	"d:l3" -> "d:my_new_idea" [ label = "gr:head" ];
+	"d:l1" -> "d:my_other_cool_idea" [ label = "gr:tail" ];
+	"d:l1" -> "d:my_new_idea" [ label = "gr:head" ];
+	"d:l4" -> "d:neruda_productions" [ label = "gr:tail" ];
+	"d:l4" -> "d:testing_creation" [ label = "gr:head" ];
+
+}

@@ -1,0 +1,10 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "gr:Arrow" ; /*classes style*/
+	"gr:" -> "http://jmvanel.free.fr/jmv.rdf#me" [ label = "foaf:maker" ];
+	"gr:" -> "https://en.wikipedia.org/wiki/Directed_graph" [ label = "rdfs:seeAlso" ];
+	"gr:Arrow" -> "owl:Thing" [ label = "gr:head" ];
+	"gr:Arrow" -> "owl:Thing" [ label = "gr:tail" ];
+
+}

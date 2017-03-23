@@ -1,0 +1,59 @@
+@prefix :        <http://deductions.github.io/seeds.owl.ttl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix seeds:   <http://deductions.github.io/seeds.owl.ttl#> .
+@prefix bioc:    <http://deductions.github.io/biological-collections.owl.ttl#> .
+
+seeds:SeedsBatch
+      a       owl:Class ;
+      rdfs:comment """
+Chacun-e indique ce qu'il-elle est prêt-e à partager avec les autres membres du réseau,
+- la quantité en nb ou grammage,
+- les indications sur les graines
+	- année,
+	- origine (paysanne autoproduite ou nom du fournisseur,
+	- bio ou non, 
+        - espèce, variété )
+- l'emplacement géographique de ces graines,
+- la modalité de partage (vente, don, ...) .
+""" ;
+      rdfs:label "lot de graines"@fr ;
+      rdfs:subClassOf bioc:Acquisition .
+
+seeds:isOrganic
+      a       owl:DatatypeProperty ;
+      rdfs:domain seeds:SeedsBatch ;
+      rdfs:label "Organic"@en , "Bio"@fr ;
+      rdfs:range xsd:boolean .
+
+seeds:quantity
+      a       owl:DatatypeProperty ;
+      rdfs:comment "quantité en grammage (grammes); exemple \"100\" "@fr ;
+      rdfs:domain seeds:SeedsBatch ;
+      rdfs:label "quantité"@fr , "quantity"@en ;
+      rdfs:range xsd:integer .
+
+seeds:variety
+      a       owl:DatatypeProperty ;
+      rdfs:domain seeds:SeedsBatch ;
+      rdfs:label "variety"@en , "variété"@fr ;
+      rdfs:range xsd:string .
+
+seeds:year
+      a       owl:DatatypeProperty ;
+      rdfs:domain seeds:SeedsBatch ;
+      rdfs:label "année"@fr ;
+      rdfs:range xsd:integer .
+
+seeds:sharingMode
+      a       owl:DatatypeProperty ;
+      rdfs:domain seeds:SeedsBatch ;
+      rdfs:label "modalité de partage (vente, don, ...)"@fr ;
+      rdfs:range xsd:string .
+
+seeds:
+      a       owl:Ontology ;
+      rdfs:label "Vocabulaire pour échange de graines"@fr .

@@ -1,0 +1,26 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "tm:Task" ; /*classes style*/
+	"NULL" -> "tm:DONE" [ label = "owl:oneOf" ];
+	"NULL" -> "tm:UnderWay" [ label = "owl:oneOf" ];
+	"NULL" -> "tm:TODO" [ label = "owl:oneOf" ];
+	"tm:" -> "http://jmvanel.free.fr/jmv.rdf#me" [ label = "foaf:maker" ];
+	"tm:Task" -> "xsd:integer" [ label = "tm:dailyPrice" ];
+	"tm:Task" -> "xsd:integer" [ label = "tm:hardness" ];
+	"tm:Task" -> "foaf:Project" [ label = "tm:project" ];
+	"tm:Task" -> "owl:Thing" [ label = "tm:group" ];
+	"tm:Task" -> "xsd:integer" [ label = "tm:estimatedPrice" ];
+	"tm:Task" -> "sioc:Thread" [ label = "tm:discussion" ];
+	"tm:Task" -> "d449dda0d2895155e0b9a3ca2c9f2cec" [ label = "tm:state" ];
+	"tm:Task" -> "foaf:Person" [ label = "tm:author" ];
+	"tm:Task" -> "xsd:integer" [ label = "tm:price" ];
+	"tm:Task" -> "xsd:integer" [ label = "tm:priority" ];
+	"tm:Task" -> "xsd:integer" [ label = "tm:workDurationEstimated" ];
+	"tm:Task" -> "owl:Thing" [ label = "tm:managedBy" ];
+	"tm:Task" -> "xsd:integer" [ label = "tm:workDuration" ];
+	"tm:Task" -> "owl:Thing" [ label = "tm:tasks" ];
+	"tm:Task" -> "foaf:Person" [ label = "tm:assignee" ];
+	"tm:Task" -> "owl:Thing" [ label = "tm:technology" ];
+
+}
