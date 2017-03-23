@@ -1,0 +1,28 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+	"bioc:form-Planting-species" -> "form:DBPediaLookup" [ label = "form:widgetClass" ];
+	"bioc:form-Planting-species" -> "bioc:species" [ label = "form:fieldAppliesToProperty" ];
+	"bioc:form-Planting-species" -> "bioc:form-Planting" [ label = "form:fieldAppliesToForm" ];
+	"bioc:form-Planting" -> "-6159c980:15afbb61ce9:-7ffc" [ label = "form:showProperties" ];
+	"bioc:form-Planting" -> "bioc:Planting" [ label = "form:classDomain" ];
+	"bioc:form-BiologicalCollection" -> "-6159c980:15afbb61ce9:-7ff7" [ label = "form:showProperties" ];
+	"bioc:form-BiologicalCollection" -> "bioc:BiologicalCollection" [ label = "form:classDomain" ];
+	"bioc:form-BiologicalCollection-location" -> "form:DBPediaLookup" [ label = "form:widgetClass" ];
+	"bioc:form-BiologicalCollection-location" -> "bioc:location" [ label = "form:fieldAppliesToProperty" ];
+	"bioc:form-BiologicalCollection-location" -> "bioc:form-BiologicalCollection" [ label = "form:fieldAppliesToForm" ];
+	"NULL" -> "bioc:provenance" [ label = "rdf:first" ];
+	"NULL" -> "-6159c980:15afbb61ce9:-7ffa" [ label = "rdf:rest" ];
+	"NULL" -> "bioc:species" [ label = "rdf:first" ];
+	"NULL" -> "-6159c980:15afbb61ce9:-7ff6" [ label = "rdf:rest" ];
+	"NULL" -> "-6159c980:15afbb61ce9:-7ff9" [ label = "rdf:rest" ];
+	"NULL" -> "rdfs:comment" [ label = "rdf:first" ];
+	"NULL" -> "bioc:location" [ label = "rdf:first" ];
+	"NULL" -> "-6159c980:15afbb61ce9:-7ff8" [ label = "rdf:rest" ];
+	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
+	"NULL" -> "-6159c980:15afbb61ce9:-7ffb" [ label = "rdf:rest" ];
+	"NULL" -> "bioc:manager" [ label = "rdf:first" ];
+	"NULL" -> "bioc:inCollection" [ label = "rdf:first" ];
+	"NULL" -> "bioc:acquisitionDate" [ label = "rdf:first" ];
+
+}

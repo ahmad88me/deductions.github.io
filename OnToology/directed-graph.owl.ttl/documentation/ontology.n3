@@ -1,0 +1,16 @@
+<http://deductions.github.io/directed-graph.owl.ttl#tail> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
+<http://deductions.github.io/directed-graph.owl.ttl#tail> <http://www.w3.org/2000/01/rdf-schema#domain> <http://deductions.github.io/directed-graph.owl.ttl#Arrow> .
+<http://deductions.github.io/directed-graph.owl.ttl#tail> <http://www.w3.org/2000/01/rdf-schema#label> "tail of an arrow"@en .
+<http://deductions.github.io/directed-graph.owl.ttl#tail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://deductions.github.io/directed-graph.owl.ttl#tail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://deductions.github.io/directed-graph.owl.ttl#head> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
+<http://deductions.github.io/directed-graph.owl.ttl#head> <http://www.w3.org/2000/01/rdf-schema#domain> <http://deductions.github.io/directed-graph.owl.ttl#Arrow> .
+<http://deductions.github.io/directed-graph.owl.ttl#head> <http://www.w3.org/2000/01/rdf-schema#label> "head of an arrow"@en .
+<http://deductions.github.io/directed-graph.owl.ttl#head> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://deductions.github.io/directed-graph.owl.ttl#head> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://deductions.github.io/directed-graph.owl.ttl#> <http://xmlns.com/foaf/0.1/maker> <http://jmvanel.free.fr/jmv.rdf#me> .
+<http://deductions.github.io/directed-graph.owl.ttl#> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Directed_graph> .
+<http://deductions.github.io/directed-graph.owl.ttl#> <http://www.w3.org/2000/01/rdf-schema#label> "Directed graphs"@en .
+<http://deductions.github.io/directed-graph.owl.ttl#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://deductions.github.io/directed-graph.owl.ttl#Arrow> <http://www.w3.org/2000/01/rdf-schema#label> "Arrow in a directed graph"@en .
+<http://deductions.github.io/directed-graph.owl.ttl#Arrow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

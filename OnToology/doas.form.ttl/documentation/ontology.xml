@@ -1,0 +1,111 @@
+<rdf:RDF
+    xmlns:form="http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms.owl.ttl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:forms="http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:doas="file:///home/ubuntu/temp/ahmad88me@gmail.com/doas.owl.ttl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:nodeID="A0">
+    <rdf:rest rdf:nodeID="A1"/>
+    <rdf:first rdf:resource="file:///home/ubuntu/temp/ahmad88me@gmail.com/doas.owl.ttl#isPluginOf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms#doasForm-outputFileTypes">
+    <form:widgetClass rdf:resource="http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms.owl.ttl#DBPediaLookup"/>
+    <form:fieldAppliesToProperty rdf:resource="file:///home/ubuntu/temp/ahmad88me@gmail.com/doas.owl.ttl#outputFileTypes"/>
+    <form:fieldAppliesToForm rdf:resource="http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms#doasForm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms#doasForm-language">
+    <form:widgetClass rdf:resource="http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms.owl.ttl#DBPediaLookup"/>
+    <form:fieldAppliesToProperty rdf:resource="file:///home/ubuntu/temp/ahmad88me@gmail.com/doas.owl.ttl#language"/>
+    <form:fieldAppliesToForm rdf:resource="http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms#doasForm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms#doasForm-hasProject">
+    <form:widgetClass rdf:resource="http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms.owl.ttl#DBPediaLookup"/>
+    <form:fieldAppliesToProperty rdf:resource="file:///home/ubuntu/temp/ahmad88me@gmail.com/doas.owl.ttl#hasProject"/>
+    <form:fieldAppliesToForm rdf:resource="http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms#doasForm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms#doasForm-softwareType">
+    <form:widgetClass rdf:resource="http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms.owl.ttl#DBPediaLookup"/>
+    <form:fieldAppliesToProperty rdf:resource="file:///home/ubuntu/temp/ahmad88me@gmail.com/doas.owl.ttl#softwareType"/>
+    <form:fieldAppliesToForm rdf:resource="http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms#doasForm"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A2">
+    <rdf:rest rdf:nodeID="A3"/>
+    <rdf:first rdf:resource="file:///home/ubuntu/temp/ahmad88me@gmail.com/doas.owl.ttl#uiTechnology"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A4">
+    <rdf:rest rdf:nodeID="A2"/>
+    <rdf:first rdf:resource="file:///home/ubuntu/temp/ahmad88me@gmail.com/doas.owl.ttl#outputFileTypes"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A1">
+    <rdf:rest rdf:nodeID="A5"/>
+    <rdf:first rdf:resource="file:///home/ubuntu/temp/ahmad88me@gmail.com/doas.owl.ttl#modelingTechnology"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A5">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="file:///home/ubuntu/temp/ahmad88me@gmail.com/doas.owl.ttl#hasProject"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A6">
+    <rdf:rest rdf:nodeID="A7"/>
+    <rdf:first rdf:resource="file:///home/ubuntu/temp/ahmad88me@gmail.com/doas.owl.ttl#features"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms#doasForm-modelingTechnology">
+    <form:widgetClass rdf:resource="http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms.owl.ttl#DBPediaLookup"/>
+    <form:fieldAppliesToProperty rdf:resource="file:///home/ubuntu/temp/ahmad88me@gmail.com/doas.owl.ttl#modelingTechnology"/>
+    <form:fieldAppliesToForm rdf:resource="http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms#doasForm"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A8">
+    <rdf:rest rdf:nodeID="A6"/>
+    <rdf:first rdf:resource="file:///home/ubuntu/temp/ahmad88me@gmail.com/doas.owl.ttl#softwareType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms#doasForm-dependencyManager">
+    <form:widgetClass rdf:resource="http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms.owl.ttl#DBPediaLookup"/>
+    <form:fieldAppliesToProperty rdf:resource="file:///home/ubuntu/temp/ahmad88me@gmail.com/doas.owl.ttl#dependencyManager"/>
+    <form:fieldAppliesToForm rdf:resource="http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms#doasForm"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A3">
+    <rdf:rest rdf:nodeID="A0"/>
+    <rdf:first rdf:resource="file:///home/ubuntu/temp/ahmad88me@gmail.com/doas.owl.ttl#dependencyManager"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A9">
+    <rdf:rest rdf:nodeID="A4"/>
+    <rdf:first rdf:resource="file:///home/ubuntu/temp/ahmad88me@gmail.com/doas.owl.ttl#inputFileTypes"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms#doasForm">
+    <form:showProperties rdf:nodeID="A8"/>
+    <rdfs:label xml:lang="en">Description Of A Software</rdfs:label>
+    <rdfs:label xml:lang="fr">Description d'un logiciel</rdfs:label>
+    <form:classDomain rdf:resource="file:///home/ubuntu/temp/ahmad88me@gmail.com/doas.owl.ttl#Software"/>
+    <rdf:type rdf:resource="http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms.owl.ttl#specification"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms#doasForm-">
+    <form:widgetClass rdf:resource="http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms.owl.ttl#DBPediaLookup"/>
+    <form:fieldAppliesToProperty rdf:resource="file:///home/ubuntu/temp/ahmad88me@gmail.com/doas.owl.ttl#"/>
+    <form:fieldAppliesToForm rdf:resource="http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms#doasForm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms#doasForm-uiTechnology">
+    <form:widgetClass rdf:resource="http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms.owl.ttl#DBPediaLookup"/>
+    <form:fieldAppliesToProperty rdf:resource="file:///home/ubuntu/temp/ahmad88me@gmail.com/doas.owl.ttl#uiTechnology"/>
+    <form:fieldAppliesToForm rdf:resource="http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms#doasForm"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A7">
+    <rdf:rest rdf:nodeID="A9"/>
+    <rdf:first rdf:resource="file:///home/ubuntu/temp/ahmad88me@gmail.com/doas.owl.ttl#language"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms#doasForm-features">
+    <form:widgetClass rdf:resource="http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms.owl.ttl#DBPediaLookup"/>
+    <form:fieldAppliesToProperty rdf:resource="file:///home/ubuntu/temp/ahmad88me@gmail.com/doas.owl.ttl#features"/>
+    <form:fieldAppliesToForm rdf:resource="http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms#doasForm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms#doasForm-inputFileTypes">
+    <form:widgetClass rdf:resource="http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms.owl.ttl#DBPediaLookup"/>
+    <form:fieldAppliesToProperty rdf:resource="file:///home/ubuntu/temp/ahmad88me@gmail.com/doas.owl.ttl#inputFileTypes"/>
+    <form:fieldAppliesToForm rdf:resource="http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms#doasForm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms#doasForm-isPluginOf">
+    <form:widgetClass rdf:resource="http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms.owl.ttl#DBPediaLookup"/>
+    <form:fieldAppliesToProperty rdf:resource="file:///home/ubuntu/temp/ahmad88me@gmail.com/doas.owl.ttl#isPluginOf"/>
+    <form:fieldAppliesToForm rdf:resource="http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms#doasForm"/>
+  </rdf:Description>
+</rdf:RDF>

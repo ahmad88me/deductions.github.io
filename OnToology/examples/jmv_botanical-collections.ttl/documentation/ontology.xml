@@ -1,0 +1,21 @@
+<rdf:RDF
+    xmlns:bioc="http://deductions.github.io/biological-collections.owl.ttl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dbr="http://dbpedia.org/resource/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:dbo="http://dbpedia.org/ontology/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="file:///home/ubuntu/temp/ahmad88me@gmail.com/Iris_sibirica">
+    <bioc:inCollection rdf:resource="http://deductions.github.io/biological-collections.owl.ttl#jean-marc_vanel_park"/>
+    <bioc:acquisitionDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-07</bioc:acquisitionDate>
+    <bioc:provenance rdf:resource="http://www.lesjardinsaquatiques.fr/#shop"/>
+    <bioc:species rdf:resource="http://dbpedia.org/resource/Iris_sibirica"/>
+    <rdf:type rdf:resource="http://deductions.github.io/biological-collections.owl.ttl#Planting"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://deductions.github.io/biological-collections.owl.ttl#jean-marc_vanel_park">
+    <bioc:manager rdf:resource="http://jmvanel.free.fr/jmv.rdf#me"/>
+    <rdf:type rdf:resource="http://deductions.github.io/biological-collections.owl.ttl#BiologicalCollection"/>
+  </rdf:Description>
+</rdf:RDF>

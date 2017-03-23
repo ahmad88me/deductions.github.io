@@ -1,0 +1,63 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:bioc="http://deductions.github.io/biological-collections.owl.ttl#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:seeds="http://deductions.github.io/seeds.owl.ttl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://deductions.github.io/seeds.owl.ttl#SeedsBatch">
+    <rdfs:comment>
+Chacun-e indique ce qu'il-elle est prêt-e à partager avec les autres membres du réseau,
+- la quantité en nb ou grammage,
+- les indications sur les graines
+	- année,
+	- origine (paysanne autoproduite ou nom du fournisseur,
+	- bio ou non, 
+        - espèce, variété )
+- l'emplacement géographique de ces graines,
+- la modalité de partage (vente, don, ...) .
+</rdfs:comment>
+    <rdfs:label xml:lang="fr">lot de graines</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://deductions.github.io/biological-collections.owl.ttl#Acquisition"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://deductions.github.io/seeds.owl.ttl#isOrganic">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:domain rdf:resource="http://deductions.github.io/seeds.owl.ttl#SeedsBatch"/>
+    <rdfs:label xml:lang="en">Organic</rdfs:label>
+    <rdfs:label xml:lang="fr">Bio</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://deductions.github.io/seeds.owl.ttl#quantity">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://deductions.github.io/seeds.owl.ttl#SeedsBatch"/>
+    <rdfs:comment xml:lang="fr">quantité en grammage (grammes); exemple "100" </rdfs:comment>
+    <rdfs:label xml:lang="en">quantity</rdfs:label>
+    <rdfs:label xml:lang="fr">quantité</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://deductions.github.io/seeds.owl.ttl#variety">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://deductions.github.io/seeds.owl.ttl#SeedsBatch"/>
+    <rdfs:label xml:lang="en">variety</rdfs:label>
+    <rdfs:label xml:lang="fr">variété</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://deductions.github.io/seeds.owl.ttl#year">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://deductions.github.io/seeds.owl.ttl#SeedsBatch"/>
+    <rdfs:label xml:lang="fr">année</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://deductions.github.io/seeds.owl.ttl#sharingMode">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://deductions.github.io/seeds.owl.ttl#SeedsBatch"/>
+    <rdfs:label xml:lang="fr">modalité de partage (vente, don, ...)</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://deductions.github.io/seeds.owl.ttl#">
+    <rdfs:label xml:lang="fr">Vocabulaire pour échange de graines</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,39 @@
+@prefix :        <http://deductions.github.io/biological-collections.owl.ttl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbr:     <http://dbpedia.org/resource/> .
+@prefix dbo:     <http://dbpedia.org/ontology/> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix form:    <http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms.owl.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbpedia:  <http://dbpedia.org/resource/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix bioc:    <http://deductions.github.io/biological-collections.owl.ttl#> .
+
+bioc:form-BiologicalCollection-location
+      rdfs:label "Plantation - emplacement détail"@fr ;
+      form:fieldAppliesToForm
+              bioc:form-BiologicalCollection ;
+      form:fieldAppliesToProperty
+              bioc:location ;
+      form:widgetClass form:DBPediaLookup .
+
+bioc:form-Planting
+      a       form:specification ;
+      rdfs:label "Planting"@en , "Plantation"@fr ;
+      form:classDomain bioc:Planting ;
+      form:showProperties (bioc:species bioc:acquisitionDate bioc:provenance bioc:inCollection rdfs:comment) .
+
+bioc:form-Planting-species
+      rdfs:label "Plantation - espèce détail"@fr ;
+      form:fieldAppliesToForm
+              bioc:form-Planting ;
+      form:fieldAppliesToProperty
+              bioc:species ;
+      form:widgetClass form:DBPediaLookup .
+
+bioc:form-BiologicalCollection
+      a       form:specification ;
+      rdfs:label "Biological Collection"@en , "Collection Biologique"@fr ;
+      form:classDomain bioc:BiologicalCollection ;
+      form:showProperties (bioc:location bioc:manager) .

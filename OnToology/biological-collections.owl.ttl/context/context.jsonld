@@ -1,0 +1,61 @@
+{
+  "@context" : {
+    "species" : {
+      "@id" : "http://deductions.github.io/biological-collections.owl.ttl#species",
+      "@type" : "@id"
+    },
+    "Organization" : {
+      "@id" : "https://schema.org/Organization"
+    },
+    "maker" : {
+      "@id" : "http://xmlns.com/foaf/0.1/maker"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Person" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Person"
+    },
+    "location" : {
+      "@id" : "http://deductions.github.io/biological-collections.owl.ttl#location",
+      "@type" : "@id"
+    },
+    "Place" : {
+      "@id" : "http://deductions.github.io/biological-collections.owl.ttl#Place"
+    },
+    "Planting" : {
+      "@id" : "http://deductions.github.io/biological-collections.owl.ttl#Planting"
+    },
+    "labelProperty" : {
+      "@id" : "http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms.owl.ttl#labelProperty"
+    },
+    "provenance" : {
+      "@id" : "http://deductions.github.io/biological-collections.owl.ttl#provenance",
+      "@type" : "@id"
+    },
+    "manager" : {
+      "@id" : "http://deductions.github.io/biological-collections.owl.ttl#manager",
+      "@type" : "@id"
+    },
+    "Acquisition" : {
+      "@id" : "http://deductions.github.io/biological-collections.owl.ttl#Acquisition"
+    },
+    "BiologicalCollection" : {
+      "@id" : "http://deductions.github.io/biological-collections.owl.ttl#BiologicalCollection"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Species" : {
+      "@id" : "http://dbpedia.org/ontology/Species"
+    },
+    "acquisitionDate" : {
+      "@id" : "http://deductions.github.io/biological-collections.owl.ttl#acquisitionDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "inCollection" : {
+      "@id" : "http://deductions.github.io/biological-collections.owl.ttl#inCollection",
+      "@type" : "@id"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "@context" : {
+    "showProperties" : {
+      "@id" : "http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms.owl.ttl#showProperties"
+    },
+    "widgetClass" : {
+      "@id" : "http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms.owl.ttl#widgetClass"
+    },
+    "fieldAppliesToForm" : {
+      "@id" : "http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms.owl.ttl#fieldAppliesToForm"
+    },
+    "classDomain" : {
+      "@id" : "http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms.owl.ttl#classDomain"
+    },
+    "fieldAppliesToProperty" : {
+      "@id" : "http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms.owl.ttl#fieldAppliesToProperty"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "specification" : {
+      "@id" : "http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms.owl.ttl#specification"
+    }
+  }
+}

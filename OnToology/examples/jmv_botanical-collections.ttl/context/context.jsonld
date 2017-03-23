@@ -1,0 +1,25 @@
+{
+  "@context" : {
+    "species" : {
+      "@id" : "http://deductions.github.io/biological-collections.owl.ttl#species"
+    },
+    "provenance" : {
+      "@id" : "http://deductions.github.io/biological-collections.owl.ttl#provenance"
+    },
+    "acquisitionDate" : {
+      "@id" : "http://deductions.github.io/biological-collections.owl.ttl#acquisitionDate"
+    },
+    "manager" : {
+      "@id" : "http://deductions.github.io/biological-collections.owl.ttl#manager"
+    },
+    "inCollection" : {
+      "@id" : "http://deductions.github.io/biological-collections.owl.ttl#inCollection"
+    },
+    "Planting" : {
+      "@id" : "http://deductions.github.io/biological-collections.owl.ttl#Planting"
+    },
+    "BiologicalCollection" : {
+      "@id" : "http://deductions.github.io/biological-collections.owl.ttl#BiologicalCollection"
+    }
+  }
+}

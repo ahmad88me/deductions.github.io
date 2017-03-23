@@ -1,0 +1,27 @@
+{
+  "@context" : {
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "maker" : {
+      "@id" : "http://xmlns.com/foaf/0.1/maker"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "tail" : {
+      "@id" : "http://deductions.github.io/directed-graph.owl.ttl#tail",
+      "@type" : "@id"
+    },
+    "head" : {
+      "@id" : "http://deductions.github.io/directed-graph.owl.ttl#head",
+      "@type" : "@id"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "Arrow" : {
+      "@id" : "http://deductions.github.io/directed-graph.owl.ttl#Arrow"
+    }
+  }
+}

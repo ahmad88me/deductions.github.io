@@ -1,0 +1,128 @@
+<rdf:RDF
+    xmlns:tm="http://deductions.github.io/task-management.owl.ttl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dbr="http://dbpedia.org/resource/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:sioc="http://rdfs.org/sioc/ns#"
+    xmlns:schema="http://schema.org/"
+    xmlns:dbo="http://dbpedia.org/ontology/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:nodeID="A0">
+    <owl:oneOf rdf:resource="http://deductions.github.io/task-management.owl.ttl#DONE"/>
+    <owl:oneOf rdf:resource="http://deductions.github.io/task-management.owl.ttl#UnderWay"/>
+    <owl:oneOf rdf:resource="http://deductions.github.io/task-management.owl.ttl#TODO"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://deductions.github.io/task-management.owl.ttl#DONE">
+    <rdfs:label xml:lang="fr">Fait</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://deductions.github.io/task-management.owl.ttl#workDuration">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://deductions.github.io/task-management.owl.ttl#Task"/>
+    <rdfs:label xml:lang="fr">JH réel</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://deductions.github.io/task-management.owl.ttl#hardness">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://deductions.github.io/task-management.owl.ttl#Task"/>
+    <rdfs:label xml:lang="fr">Difficulté</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://deductions.github.io/task-management.owl.ttl#estimatedPrice">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://deductions.github.io/task-management.owl.ttl#Task"/>
+    <rdfs:label xml:lang="fr">Tarif estimé</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://deductions.github.io/task-management.owl.ttl#price">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://deductions.github.io/task-management.owl.ttl#Task"/>
+    <rdfs:label xml:lang="fr">Tarif réel</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://deductions.github.io/task-management.owl.ttl#workDurationEstimated">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://deductions.github.io/task-management.owl.ttl#Task"/>
+    <rdfs:label xml:lang="fr">JH estimé</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://deductions.github.io/task-management.owl.ttl#UnderWay">
+    <rdfs:label xml:lang="fr">En cours</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://deductions.github.io/task-management.owl.ttl#discussion">
+    <rdfs:range rdf:resource="http://rdfs.org/sioc/ns#Thread"/>
+    <rdfs:domain rdf:resource="http://deductions.github.io/task-management.owl.ttl#Task"/>
+    <rdfs:label xml:lang="fr">Discussion</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://deductions.github.io/task-management.owl.ttl#Task">
+    <rdfs:label xml:lang="en">Task</rdfs:label>
+    <rdfs:label xml:lang="fr">Tâche</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://deductions.github.io/task-management.owl.ttl#tasks">
+    <rdfs:domain rdf:resource="http://deductions.github.io/task-management.owl.ttl#Task"/>
+    <rdfs:label xml:lang="fr">sous-tâches</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://deductions.github.io/task-management.owl.ttl#state">
+    <rdfs:range rdf:nodeID="A0"/>
+    <rdfs:domain rdf:resource="http://deductions.github.io/task-management.owl.ttl#Task"/>
+    <rdfs:label xml:lang="fr">Etat</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://deductions.github.io/task-management.owl.ttl#group">
+    <rdfs:domain rdf:resource="http://deductions.github.io/task-management.owl.ttl#Task"/>
+    <rdfs:label xml:lang="fr">Groupe</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://deductions.github.io/task-management.owl.ttl#managedBy">
+    <rdfs:domain rdf:resource="http://deductions.github.io/task-management.owl.ttl#Task"/>
+    <rdfs:label xml:lang="fr">Suivi par</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://deductions.github.io/task-management.owl.ttl#">
+    <foaf:maker rdf:resource="http://jmvanel.free.fr/jmv.rdf#me"/>
+    <rdfs:label xml:lang="en">Task management ontology.</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://deductions.github.io/task-management.owl.ttl#technology">
+    <rdfs:domain rdf:resource="http://deductions.github.io/task-management.owl.ttl#Task"/>
+    <rdfs:label xml:lang="fr">Technologie</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://deductions.github.io/task-management.owl.ttl#TODO">
+    <rdfs:label xml:lang="fr">A faire</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://deductions.github.io/task-management.owl.ttl#assignee">
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="http://deductions.github.io/task-management.owl.ttl#Task"/>
+    <rdfs:label xml:lang="fr">Assignée à</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://deductions.github.io/task-management.owl.ttl#priority">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://deductions.github.io/task-management.owl.ttl#Task"/>
+    <rdfs:label xml:lang="fr">Priorité</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://deductions.github.io/task-management.owl.ttl#project">
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
+    <rdfs:domain rdf:resource="http://deductions.github.io/task-management.owl.ttl#Task"/>
+    <rdfs:label xml:lang="fr">projet</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://deductions.github.io/task-management.owl.ttl#author">
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="http://deductions.github.io/task-management.owl.ttl#Task"/>
+    <rdfs:label xml:lang="fr">Créée par</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://deductions.github.io/task-management.owl.ttl#dailyPrice">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://deductions.github.io/task-management.owl.ttl#Task"/>
+    <rdfs:label xml:lang="fr">TJM</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+</rdf:RDF>

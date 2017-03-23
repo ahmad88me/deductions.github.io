@@ -1,0 +1,65 @@
+<rdf:RDF
+    xmlns:form="http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms.owl.ttl#"
+    xmlns:bioc="http://deductions.github.io/biological-collections.owl.ttl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dbr="http://dbpedia.org/resource/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:dbo="http://dbpedia.org/ontology/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://deductions.github.io/biological-collections.owl.ttl#form-BiologicalCollection-location">
+    <form:widgetClass rdf:resource="http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms.owl.ttl#DBPediaLookup"/>
+    <form:fieldAppliesToProperty rdf:resource="http://deductions.github.io/biological-collections.owl.ttl#location"/>
+    <form:fieldAppliesToForm rdf:resource="http://deductions.github.io/biological-collections.owl.ttl#form-BiologicalCollection"/>
+    <rdfs:label xml:lang="fr">Plantation - emplacement détail</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A0">
+    <rdf:rest rdf:nodeID="A1"/>
+    <rdf:first rdf:resource="http://deductions.github.io/biological-collections.owl.ttl#species"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A1">
+    <rdf:rest rdf:nodeID="A2"/>
+    <rdf:first rdf:resource="http://deductions.github.io/biological-collections.owl.ttl#acquisitionDate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://deductions.github.io/biological-collections.owl.ttl#form-Planting">
+    <form:showProperties rdf:nodeID="A0"/>
+    <form:classDomain rdf:resource="http://deductions.github.io/biological-collections.owl.ttl#Planting"/>
+    <rdfs:label xml:lang="fr">Plantation</rdfs:label>
+    <rdfs:label xml:lang="en">Planting</rdfs:label>
+    <rdf:type rdf:resource="http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms.owl.ttl#specification"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A3">
+    <rdf:rest rdf:nodeID="A4"/>
+    <rdf:first rdf:resource="http://deductions.github.io/biological-collections.owl.ttl#inCollection"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A2">
+    <rdf:rest rdf:nodeID="A3"/>
+    <rdf:first rdf:resource="http://deductions.github.io/biological-collections.owl.ttl#provenance"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A5">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://deductions.github.io/biological-collections.owl.ttl#manager"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://deductions.github.io/biological-collections.owl.ttl#form-Planting-species">
+    <form:widgetClass rdf:resource="http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms.owl.ttl#DBPediaLookup"/>
+    <form:fieldAppliesToProperty rdf:resource="http://deductions.github.io/biological-collections.owl.ttl#species"/>
+    <form:fieldAppliesToForm rdf:resource="http://deductions.github.io/biological-collections.owl.ttl#form-Planting"/>
+    <rdfs:label xml:lang="fr">Plantation - espèce détail</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://deductions.github.io/biological-collections.owl.ttl#form-BiologicalCollection">
+    <form:showProperties rdf:nodeID="A6"/>
+    <form:classDomain rdf:resource="http://deductions.github.io/biological-collections.owl.ttl#BiologicalCollection"/>
+    <rdfs:label xml:lang="fr">Collection Biologique</rdfs:label>
+    <rdfs:label xml:lang="en">Biological Collection</rdfs:label>
+    <rdf:type rdf:resource="http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms.owl.ttl#specification"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A6">
+    <rdf:rest rdf:nodeID="A5"/>
+    <rdf:first rdf:resource="http://deductions.github.io/biological-collections.owl.ttl#location"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A4">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+  </rdf:Description>
+</rdf:RDF>

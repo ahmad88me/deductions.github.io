@@ -1,0 +1,31 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+	"seeds:form-SeedsBatch-variety" -> "form:DBPediaLookup" [ label = "form:widgetClass" ];
+	"seeds:form-SeedsBatch-variety" -> "seeds:variety" [ label = "form:fieldAppliesToProperty" ];
+	"seeds:form-SeedsBatch-variety" -> "seeds:form-SeedsBatch" [ label = "form:fieldAppliesToForm" ];
+	"seeds:form-SeedsBatch-species" -> "form:DBPediaLookup" [ label = "form:widgetClass" ];
+	"seeds:form-SeedsBatch-species" -> "bioc:species" [ label = "form:fieldAppliesToProperty" ];
+	"seeds:form-SeedsBatch-species" -> "seeds:form-SeedsBatch" [ label = "form:fieldAppliesToForm" ];
+	"NULL" -> "bioc:provenance" [ label = "rdf:first" ];
+	"NULL" -> "2cf42e5f:15afbb7afd3:-7ff8" [ label = "rdf:rest" ];
+	"NULL" -> "2cf42e5f:15afbb7afd3:-7ff5" [ label = "rdf:rest" ];
+	"NULL" -> "bioc:species" [ label = "rdf:first" ];
+	"NULL" -> "seeds:sharingMode" [ label = "rdf:first" ];
+	"NULL" -> "seeds:year" [ label = "rdf:first" ];
+	"NULL" -> "rdfs:comment" [ label = "rdf:first" ];
+	"NULL" -> "2cf42e5f:15afbb7afd3:-7ffb" [ label = "rdf:rest" ];
+	"NULL" -> "2cf42e5f:15afbb7afd3:-7ff4" [ label = "rdf:rest" ];
+	"NULL" -> "2cf42e5f:15afbb7afd3:-7ff7" [ label = "rdf:rest" ];
+	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
+	"NULL" -> "bioc:inCollection" [ label = "rdf:first" ];
+	"NULL" -> "2cf42e5f:15afbb7afd3:-7ffa" [ label = "rdf:rest" ];
+	"NULL" -> "seeds:isOrganic" [ label = "rdf:first" ];
+	"NULL" -> "seeds:variety" [ label = "rdf:first" ];
+	"NULL" -> "2cf42e5f:15afbb7afd3:-7ff6" [ label = "rdf:rest" ];
+	"NULL" -> "2cf42e5f:15afbb7afd3:-7ff9" [ label = "rdf:rest" ];
+	"NULL" -> "seeds:quantity" [ label = "rdf:first" ];
+	"seeds:form-SeedsBatch" -> "2cf42e5f:15afbb7afd3:-7ffc" [ label = "form:showProperties" ];
+	"seeds:form-SeedsBatch" -> "seeds:SeedsBatch" [ label = "form:classDomain" ];
+
+}

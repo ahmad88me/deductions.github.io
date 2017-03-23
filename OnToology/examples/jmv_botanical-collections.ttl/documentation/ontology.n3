@@ -1,0 +1,7 @@
+<http://deductions.github.io/biological-collections.owl.ttl#jean-marc_vanel_park> <http://deductions.github.io/biological-collections.owl.ttl#manager> <http://jmvanel.free.fr/jmv.rdf#me> .
+<http://deductions.github.io/biological-collections.owl.ttl#jean-marc_vanel_park> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://deductions.github.io/biological-collections.owl.ttl#BiologicalCollection> .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/Iris_sibirica> <http://deductions.github.io/biological-collections.owl.ttl#inCollection> <http://deductions.github.io/biological-collections.owl.ttl#jean-marc_vanel_park> .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/Iris_sibirica> <http://deductions.github.io/biological-collections.owl.ttl#acquisitionDate> "2016-07"^^<http://www.w3.org/2001/XMLSchema#date> .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/Iris_sibirica> <http://deductions.github.io/biological-collections.owl.ttl#provenance> <http://www.lesjardinsaquatiques.fr/#shop> .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/Iris_sibirica> <http://deductions.github.io/biological-collections.owl.ttl#species> <http://dbpedia.org/resource/Iris_sibirica> .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/Iris_sibirica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://deductions.github.io/biological-collections.owl.ttl#Planting> .

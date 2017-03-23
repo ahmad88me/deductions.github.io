@@ -1,0 +1,56 @@
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/#> <http://www.w3.org/2000/01/rdf-schema#comment> "Description Of A Software, a formal Description of a software focusing on architecture, feature, and input/output, enabling to search a software component according to needs,\nand leveraging on dbPdedia.\ncomplementary to DOAP."@en .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/#> <http://www.w3.org/2000/01/rdf-schema#label> "Description Of A Software" .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/#isPluginOf> <http://www.w3.org/2000/01/rdf-schema#range> <file:///home/ubuntu/temp/ahmad88me@gmail.com/#Software> .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/#isPluginOf> <http://www.w3.org/2000/01/rdf-schema#label> "plugin of"@en .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/#isPluginOf> <http://www.w3.org/2000/01/rdf-schema#domain> <file:///home/ubuntu/temp/ahmad88me@gmail.com/#Software> .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/#isPluginOf> <http://www.w3.org/2000/01/rdf-schema#comment> "embedding software if this sowftware is a plugin or module, as dbPdedia URI's; e.g. Firefox, Chrome, Apache, Prot\u00E9g\u00E9, ..."@en .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/#isPluginOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/#hasProject> <http://www.w3.org/2000/01/rdf-schema#range> <http://usefulinc.com/ns/doap#Project> .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/#hasProject> <http://www.w3.org/2000/01/rdf-schema#label> "project"@en .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/#hasProject> <http://www.w3.org/2000/01/rdf-schema#domain> <file:///home/ubuntu/temp/ahmad88me@gmail.com/#Software> .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/#hasProject> <http://www.w3.org/2000/01/rdf-schema#comment> "the associated project(s)"@en .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/#hasProject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/#dependencyManager> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/#dependencyManager> <http://www.w3.org/2000/01/rdf-schema#label> "dependency Manager"@en .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/#dependencyManager> <http://www.w3.org/2000/01/rdf-schema#domain> <file:///home/ubuntu/temp/ahmad88me@gmail.com/#Software> .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/#dependencyManager> <http://www.w3.org/2000/01/rdf-schema#comment> "dependency Manager like npm, Maven, SBT, or explicitely dbpedia:Nothing, as dbPdedia URI's"@en .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/#dependencyManager> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/#features> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/#features> <http://www.w3.org/2000/01/rdf-schema#label> "features"@en .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/#features> <http://www.w3.org/2000/01/rdf-schema#domain> <file:///home/ubuntu/temp/ahmad88me@gmail.com/#Software> .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/#features> <http://www.w3.org/2000/01/rdf-schema#comment> "features, as dbPdedia URI's"@en .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/#features> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/#inputFileTypes> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/#inputFileTypes> <http://www.w3.org/2000/01/rdf-schema#label> "input file types"@en .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/#inputFileTypes> <http://www.w3.org/2000/01/rdf-schema#domain> <file:///home/ubuntu/temp/ahmad88me@gmail.com/#Software> .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/#inputFileTypes> <http://www.w3.org/2000/01/rdf-schema#comment> "input file types, as dbPdedia URI's"@en .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/#inputFileTypes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/#softwareType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/#softwareType> <http://www.w3.org/2000/01/rdf-schema#label> "software type"@en .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/#softwareType> <http://www.w3.org/2000/01/rdf-schema#domain> <file:///home/ubuntu/temp/ahmad88me@gmail.com/#Software> .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/#softwareType> <http://www.w3.org/2000/01/rdf-schema#comment> "software type : client, server, library, compiler, etc (as dbPdedia URI)"@en .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/#softwareType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/#Software> <http://www.w3.org/2000/01/rdf-schema#label> "A software"@en .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/#Software> <http://www.w3.org/2000/01/rdf-schema#subclassOf> <http://usefulinc.com/ns/doap#Project> .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/#Software> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/#uiTechnology> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/#uiTechnology> <http://www.w3.org/2000/01/rdf-schema#label> "UI"@en .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/#uiTechnology> <http://www.w3.org/2000/01/rdf-schema#domain> <file:///home/ubuntu/temp/ahmad88me@gmail.com/#Software> .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/#uiTechnology> <http://www.w3.org/2000/01/rdf-schema#comment> "User interface, a broad platform or library name, like web browser, Java Swing, TCL/TK, as dbPdedia URI's"@en .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/#uiTechnology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/#modelingTechnology> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/#modelingTechnology> <http://www.w3.org/2000/01/rdf-schema#label> "modeling technology"@en .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/#modelingTechnology> <http://www.w3.org/2000/01/rdf-schema#domain> <file:///home/ubuntu/temp/ahmad88me@gmail.com/#Software> .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/#modelingTechnology> <http://www.w3.org/2000/01/rdf-schema#comment> "modeling technology, as dbPdedia URI's; e.g. OWL, UML, SQL, Swagger, ..."@en .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/#modelingTechnology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/#outputFileTypes> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/#outputFileTypes> <http://www.w3.org/2000/01/rdf-schema#label> "output file types"@en .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/#outputFileTypes> <http://www.w3.org/2000/01/rdf-schema#domain> <file:///home/ubuntu/temp/ahmad88me@gmail.com/#Software> .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/#outputFileTypes> <http://www.w3.org/2000/01/rdf-schema#comment> "output file types, as dbPdedia URI's"@en .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/#outputFileTypes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/#language> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/#language> <http://www.w3.org/2000/01/rdf-schema#label> "language"@en .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/#language> <http://www.w3.org/2000/01/rdf-schema#domain> <file:///home/ubuntu/temp/ahmad88me@gmail.com/#Software> .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/#language> <http://www.w3.org/2000/01/rdf-schema#comment> "programming language, as dbPdedia URI's"@en .
+<file:///home/ubuntu/temp/ahmad88me@gmail.com/#language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .

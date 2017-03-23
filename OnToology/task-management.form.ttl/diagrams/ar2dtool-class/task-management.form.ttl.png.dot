@@ -1,0 +1,47 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+	"tm:form-Task-technology" -> "form:DBPediaLookup" [ label = "form:widgetClass" ];
+	"tm:form-Task-technology" -> "tm:technology" [ label = "form:fieldAppliesToProperty" ];
+	"tm:form-Task-technology" -> "tm:form-Task" [ label = "form:fieldAppliesToForm" ];
+	"NULL" -> "tm:priority" [ label = "rdf:first" ];
+	"NULL" -> "tm:author" [ label = "rdf:first" ];
+	"NULL" -> "tm:discussion" [ label = "rdf:first" ];
+	"NULL" -> "512da65a:15afbb817b0:-7fed" [ label = "rdf:rest" ];
+	"NULL" -> "512da65a:15afbb817b0:-7ff0" [ label = "rdf:rest" ];
+	"NULL" -> "tm:state" [ label = "rdf:first" ];
+	"NULL" -> "512da65a:15afbb817b0:-7ff3" [ label = "rdf:rest" ];
+	"NULL" -> "512da65a:15afbb817b0:-7ff6" [ label = "rdf:rest" ];
+	"NULL" -> "512da65a:15afbb817b0:-7ff9" [ label = "rdf:rest" ];
+	"NULL" -> "tm:hardness" [ label = "rdf:first" ];
+	"NULL" -> "tm:workDuration" [ label = "rdf:first" ];
+	"NULL" -> "dct:subject" [ label = "rdf:first" ];
+	"NULL" -> "tm:managedBy" [ label = "rdf:first" ];
+	"NULL" -> "tm:dailyPrice" [ label = "rdf:first" ];
+	"NULL" -> "tm:project" [ label = "rdf:first" ];
+	"NULL" -> "512da65a:15afbb817b0:-7fec" [ label = "rdf:rest" ];
+	"NULL" -> "512da65a:15afbb817b0:-7fef" [ label = "rdf:rest" ];
+	"NULL" -> "tm:assignee" [ label = "rdf:first" ];
+	"NULL" -> "512da65a:15afbb817b0:-7ff2" [ label = "rdf:rest" ];
+	"NULL" -> "tm:group" [ label = "rdf:first" ];
+	"NULL" -> "512da65a:15afbb817b0:-7ff5" [ label = "rdf:rest" ];
+	"NULL" -> "512da65a:15afbb817b0:-7ff8" [ label = "rdf:rest" ];
+	"NULL" -> "512da65a:15afbb817b0:-7ffb" [ label = "rdf:rest" ];
+	"NULL" -> "tm:technology" [ label = "rdf:first" ];
+	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
+	"NULL" -> "tm:price" [ label = "rdf:first" ];
+	"NULL" -> "tm:tasks" [ label = "rdf:first" ];
+	"NULL" -> "tm:workDurationEstimated" [ label = "rdf:first" ];
+	"NULL" -> "512da65a:15afbb817b0:-7fee" [ label = "rdf:rest" ];
+	"NULL" -> "512da65a:15afbb817b0:-7ff1" [ label = "rdf:rest" ];
+	"NULL" -> "512da65a:15afbb817b0:-7ff4" [ label = "rdf:rest" ];
+	"NULL" -> "512da65a:15afbb817b0:-7ff7" [ label = "rdf:rest" ];
+	"NULL" -> "512da65a:15afbb817b0:-7ffa" [ label = "rdf:rest" ];
+	"NULL" -> "tm:estimatedPrice" [ label = "rdf:first" ];
+	"tm:form-Task" -> "512da65a:15afbb817b0:-7ffc" [ label = "form:showProperties" ];
+	"tm:form-Task" -> "tm:Task" [ label = "form:classDomain" ];
+	"tm:form-Task-subject" -> "form:DBPediaLookup" [ label = "form:widgetClass" ];
+	"tm:form-Task-subject" -> "dct:subject" [ label = "form:fieldAppliesToProperty" ];
+	"tm:form-Task-subject" -> "tm:form-Task" [ label = "form:fieldAppliesToForm" ];
+
+}

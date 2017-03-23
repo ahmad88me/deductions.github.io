@@ -1,0 +1,31 @@
+@prefix :        <http://deductions.github.io/seeds.owl.ttl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix form:    <http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms.owl.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix seeds:   <http://deductions.github.io/seeds.owl.ttl#> .
+@prefix bioc:    <http://deductions.github.io/biological-collections.owl.ttl#> .
+
+seeds:form-SeedsBatch-species
+      rdfs:label "lot de graines - espèce détail"@fr ;
+      form:fieldAppliesToForm
+              seeds:form-SeedsBatch ;
+      form:fieldAppliesToProperty
+              bioc:species ;
+      form:widgetClass form:DBPediaLookup .
+
+seeds:form-SeedsBatch
+      a       form:specification ;
+      rdfs:label "Seeds Batch"@en , "lot de graines - formulaires"@fr ;
+      form:classDomain seeds:SeedsBatch ;
+      form:showProperties (bioc:species seeds:variety seeds:year seeds:quantity seeds:isOrganic bioc:provenance bioc:inCollection seeds:sharingMode rdfs:comment) .
+
+seeds:form-SeedsBatch-variety
+      rdfs:label "lot de graines - variété détail"@fr ;
+      form:fieldAppliesToForm
+              seeds:form-SeedsBatch ;
+      form:fieldAppliesToProperty
+              seeds:variety ;
+      form:widgetClass form:DBPediaLookup .

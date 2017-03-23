@@ -1,0 +1,9 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+	"bioc:jean-marc_vanel_park" -> "http://jmvanel.free.fr/jmv.rdf#me" [ label = "bioc:manager" ];
+	"file:///Iris_sibirica" -> "bioc:jean-marc_vanel_park" [ label = "bioc:inCollection" ];
+	"file:///Iris_sibirica" -> "http://www.lesjardinsaquatiques.fr/#shop" [ label = "bioc:provenance" ];
+	"file:///Iris_sibirica" -> "dbpedia:Iris_sibirica" [ label = "bioc:species" ];
+
+}

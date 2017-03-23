@@ -1,0 +1,14 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "bioc:Place" "bioc:BiologicalCollection" "bioc:Planting" "bioc:Acquisition" ; /*classes style*/
+	"bioc:Planting" -> "bioc:species" [ label = "form:labelProperty" ];
+	"bioc:" -> "http://jmvanel.free.fr/jmv.rdf#me" [ label = "foaf:maker" ];
+	"bioc:BiologicalCollection" -> "foaf:Person" [ label = "bioc:manager" ];
+	"bioc:Acquisition" -> "https://schema.org/Organization" [ label = "bioc:provenance" ];
+	"bioc:BiologicalCollection" -> "bioc:Place" [ label = "bioc:location" ];
+	"bioc:Acquisition" -> "xsd:date" [ label = "bioc:acquisitionDate" ];
+	"bioc:Acquisition" -> "bioc:BiologicalCollection" [ label = "bioc:inCollection" ];
+	"bioc:Acquisition" -> "dbo:Species" [ label = "bioc:species" ];
+
+}

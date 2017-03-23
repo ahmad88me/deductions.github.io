@@ -1,0 +1,28 @@
+@prefix :        <http://deductions.github.io/directed-graph.owl.ttl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix gr:      <http://deductions.github.io/directed-graph.owl.ttl#> .
+
+gr:   a       owl:Ontology ;
+      rdfs:label "Directed graphs"@en ;
+      rdfs:seeAlso <https://en.wikipedia.org/wiki/Directed_graph> ;
+      foaf:maker <http://jmvanel.free.fr/jmv.rdf#me> .
+
+gr:tail
+      a       owl:FunctionalProperty , owl:ObjectProperty ;
+      rdfs:domain gr:Arrow ;
+      rdfs:label "tail of an arrow"@en ;
+      rdfs:range owl:Thing .
+
+gr:head
+      a       owl:FunctionalProperty , owl:ObjectProperty ;
+      rdfs:domain gr:Arrow ;
+      rdfs:label "head of an arrow"@en ;
+      rdfs:range owl:Thing .
+
+gr:Arrow
+      a       owl:Class ;
+      rdfs:label "Arrow in a directed graph"@en .

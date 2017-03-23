@@ -1,0 +1,123 @@
+@prefix :        <http://deductions.github.io/task-management.owl.ttl#> .
+@prefix tm:      <http://deductions.github.io/task-management.owl.ttl#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix schema:  <http://schema.org/> .
+@prefix sioc:    <http://rdfs.org/sioc/ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbr:     <http://dbpedia.org/resource/> .
+@prefix dbo:     <http://dbpedia.org/ontology/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbpedia:  <http://dbpedia.org/resource/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+tm:DONE
+      rdfs:label "Fait"@fr .
+
+tm:workDuration
+      a       owl:DatatypeProperty ;
+      rdfs:domain tm:Task ;
+      rdfs:label "JH réel"@fr ;
+      rdfs:range xsd:integer .
+
+tm:hardness
+      a       owl:DatatypeProperty ;
+      rdfs:domain tm:Task ;
+      rdfs:label "Difficulté"@fr ;
+      rdfs:range xsd:integer .
+
+tm:estimatedPrice
+      a       owl:DatatypeProperty ;
+      rdfs:domain tm:Task ;
+      rdfs:label "Tarif estimé"@fr ;
+      rdfs:range xsd:integer .
+
+tm:price
+      a       owl:DatatypeProperty ;
+      rdfs:domain tm:Task ;
+      rdfs:label "Tarif réel"@fr ;
+      rdfs:range xsd:integer .
+
+tm:workDurationEstimated
+      a       owl:DatatypeProperty ;
+      rdfs:domain tm:Task ;
+      rdfs:label "JH estimé"@fr ;
+      rdfs:range xsd:integer .
+
+tm:UnderWay
+      rdfs:label "En cours"@fr .
+
+tm:discussion
+      a       owl:DatatypeProperty ;
+      rdfs:domain tm:Task ;
+      rdfs:label "Discussion"@fr ;
+      rdfs:range sioc:Thread .
+
+tm:Task
+      a       owl:Class ;
+      rdfs:label "Task"@en , "Tâche"@fr .
+
+tm:tasks
+      a       owl:ObjectProperty ;
+      rdfs:domain tm:Task ;
+      rdfs:label "sous-tâches"@fr .
+
+tm:state
+      a       owl:ObjectProperty ;
+      rdfs:domain tm:Task ;
+      rdfs:label "Etat"@fr ;
+      rdfs:range
+              [ owl:oneOf tm:DONE , tm:TODO , tm:UnderWay
+              ] .
+
+tm:group
+      a       owl:DatatypeProperty ;
+      rdfs:domain tm:Task ;
+      rdfs:label "Groupe"@fr .
+
+tm:managedBy
+      a       owl:DatatypeProperty ;
+      rdfs:domain tm:Task ;
+      rdfs:label "Suivi par"@fr .
+
+tm:   a       owl:Ontology ;
+      rdfs:label "Task management ontology."@en ;
+      foaf:maker <http://jmvanel.free.fr/jmv.rdf#me> .
+
+tm:technology
+      a       owl:ObjectProperty ;
+      rdfs:domain tm:Task ;
+      rdfs:label "Technologie"@fr .
+
+tm:TODO
+      rdfs:label "A faire"@fr .
+
+tm:assignee
+      a       owl:ObjectProperty ;
+      rdfs:domain tm:Task ;
+      rdfs:label "Assignée à"@fr ;
+      rdfs:range foaf:Person .
+
+tm:priority
+      a       owl:DatatypeProperty ;
+      rdfs:domain tm:Task ;
+      rdfs:label "Priorité"@fr ;
+      rdfs:range xsd:integer .
+
+tm:project
+      a       owl:ObjectProperty ;
+      rdfs:domain tm:Task ;
+      rdfs:label "projet"@fr ;
+      rdfs:range foaf:Project .
+
+tm:author
+      a       owl:ObjectProperty ;
+      rdfs:domain tm:Task ;
+      rdfs:label "Créée par"@fr ;
+      rdfs:range foaf:Person .
+
+tm:dailyPrice
+      a       owl:DatatypeProperty ;
+      rdfs:domain tm:Task ;
+      rdfs:label "TJM"@fr ;
+      rdfs:range xsd:integer .
